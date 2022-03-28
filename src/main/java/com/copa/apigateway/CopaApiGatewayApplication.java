@@ -1,0 +1,15 @@
+package com.copa.apigateway;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+
+@SpringBootApplication
+@EnableDiscoveryClient
+public class CopaApiGatewayApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CopaApiGatewayApplication.class, args);
+	}
+
+}
