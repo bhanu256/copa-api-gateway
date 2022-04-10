@@ -8,7 +8,15 @@ spring:
         uri: lb://ITEMS-SERVICE
         predicates:
         - Path=/item/**
-    
+      - id: AUTH-SERVICE
+        uri: lb://AUTH-SERVICE
+        predicates:
+        - Path= /auth/**
+      - id: USER-SERVICE
+        uri: lb://AUTH-SERVICE
+        predicates:
+        - Path=/user/**
+
 server:
   port: 9191
   
